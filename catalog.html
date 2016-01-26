@@ -8,16 +8,14 @@
 <header class="main_header">
     <div class="container">
         <div class="upper_header">
-            <div class="logotype">
-                <a href="#">Техномарт</a>
-            </div>
+            <a href="#" class="logotype">Техномарт</a>
             <form>
-                <a href="#" class="search">Найти</a>
+                <input type="submit" class="search">
                 <input type="text" placeholder="Поиск:">
             </form>
-            <a href="#">Закладки: 0</a>
-            <a href="#">Корзина: 10</a> <!--Здесь наверное нужно было сделать много блоков-->
-            <a href="#">Оформить заказ</a>
+            <a href="#">Закладки: <span>0</span></a>
+            <a href="#">Корзина: <span>10</span></a>
+            <a href="#" class="checkout">Оформить заказ</a>
         </div>
         <div class="information">
             <h1>Интернет-магазин<br> строительных материалов<br> и инструмента для ремонта</h1>
@@ -72,29 +70,24 @@
                     <a href="#">Инструмент</a>
                 </li>
                 <li>
-                    <a href="#">Перфораторы</a>
+                    <p>Перфораторы</p>
                 </li>
             </ul>
         </div>
-        <div class="main_h1">
-            <h1>Перфораторы</h1>
-        </div>
-        <div class="filters">
-            <p>Фильтр:</p>
-        </div>
-        <h2>Цена:</h2>
+        <h1>Перфораторы</h1>
         <div class="catalog_form">
+            <p>Фильтр:</p>
             <form>
                 <fieldset>
-                    <legend>Ползунок</legend>
+                    <legend>Цена</legend>
                         <div class="catalog_slider">
                             <input type="range" min="0" max="30000" step="100" value="15000">
                         </div>
                     <div class="catalog_slider_min">
-                        <p>0</p>
+                        <input type="text" value="0">
                     </div>
                     <div class="catalog_slider_max">
-                        <p>30000</p>
+                        <input type="text" value="30000">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -120,143 +113,111 @@
                 <button type="submit">Показать</button>
             </form>
         </div>
-        <div class="sorting">
-            <p>Сортировка:</p>
-            <a href="#" class="sorting_active">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По функционалу</a>
-            <button>Вверх</button>
-            <button>Вниз</button>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
+        <div class="container_catalog">
+            <div class="sorting">
+                <p>Сортировка:</p>
+                <a href="#" class="sorting_active">По цене</a>
+                <a href="#">По типу</a>
+                <a href="#">По функционалу</a>
+                <a href="#">Вверх</a>
+                <a href="#">Вниз</a>
+            </div>
+            <div class="all_items">
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
+                <div class="item_content">
+                    <a href="#">Купить</a>
+                    <a href="#">В закладки</a>
+                </div>
                 <p>Перфоратор Bosch</p>
                 <p>BFG 3000</p>
                 <p class="price_old">22500</p>
-                    <div>
-                        <div class="price">
-                            <a href="#">15500</a>
-                        </div>
+                <a href="#">15500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
+                <div class="item_content">
+                    <a href="#">Купить</a>
+                    <a href="#">В закладки</a>
+                </div>
                 <p>Перфоратор Bosch</p>
                 <p>BFG 6000</p>
                 <p class="price_old">30500</p>
-                <div>
-                    <div class="price">
-                        <a href="#">25500</a>
-                    </div>
+                <a href="#">25500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item new">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 2000</p>
-                <div>
-                    <div class="price">
-                        <a href="#">12500</a>
+                <div class="item new">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 2000</p>
+                    <a href="#">12500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 3000</p>
-                <p class="price_old">22500</p>
-                <div>
-                    <div class="price">
-                        <a href="#">15500</a>
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 3000</p>
+                    <p class="price_old">22500</p>
+                    <a href="#">15500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item new">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 6000</p>
-                <p class="price_old">30500</p>
-                <div>
-                    <div class="price">
-                        <a href="#">25500</a>
+                <div class="item new">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 6000</p>
+                    <p class="price_old">30500</p>
+                    <a href="#">25500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 2000</p>
-                <div>
-                    <div class="price">
-                        <a href="#">12500</a>
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 2000</p>
+                    <a href="#">12500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item new">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 3000</p>
-                <p class="price_old">22500</p>
-                <div>
-                    <div class="price">
-                        <a href="#">15500</a>
+                <div class="item new">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 3000</p>
+                    <p class="price_old">22500</p>
+                    <a href="#">15500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 6000</p>
-                <p class="price_old">30500</p>
-                <div>
-                    <div class="price">
-                        <a href="#">25500</a>
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 6000</p>
+                    <p class="price_old">30500</p>
+                    <a href="#">25500</a>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="item_content">
-                <button>Купить</button>
-                <button>В закладки</button>
-                <p>Перфоратор Bosch</p>
-                <p>BFG 2000</p>
-                <div>
-                    <div class="price">
-                        <a href="#">12500</a>
+                <div class="item">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
+                    <div class="item_content">
+                        <a href="#">Купить</a>
+                        <a href="#">В закладки</a>
                     </div>
+                    <p>Перфоратор Bosch</p>
+                    <p>BFG 2000</p>
+                    <a href="#">12500</a>
                 </div>
             </div>
         </div>
@@ -277,9 +238,7 @@
     <div class="main_footer">
         <div class="container">
             <div class="upper_footer">
-                <div class="logotype">
-                    <a href="#">Техномарт</a>
-                </div>
+                <a href="#" class="logotype">Техномарт</a>
                 <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                     +7 (812) 555-05-55</p>
                 <ul>
