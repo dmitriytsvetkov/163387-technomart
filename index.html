@@ -6,22 +6,24 @@
       <title>HTML Academy: Техномарт Главная</title>
   </head>
   <body>
-<header class="main_header">
-    <div class="container">
-          <div class="upper_header">
-              <a href="#" class="logotype">Техномарт</a>
-              <form>
+<header class="main_header"> <!--Зачем тут класс кстати?-->
+    <div class="container clearfix">
+          <div class="upper_header clearfix">
+              <div class="upper_header_logo">
+                  <a href="#" class="logotype">Техномарт</a>
+              </div>
+              <form class="upper_header_form">
                   <input type="submit" class="search">
                   <input type="text" placeholder="Поиск:">
               </form>
-              <a href="#">Закладки: <span>0</span></a>
-              <a href="#">Корзина: <span>0</span></a>
-              <a href="#" class="checkout">Оформить заказ</a>
+              <a href="#" class="upper_header_bookmarks">Закладки: <span>0</span></a>
+              <a href="#" class="upper_header_basket">Корзина: <span>0</span></a>
+              <a href="#" class="upper_header_checkout">Оформить заказ</a>
           </div>
-          <div class="information">
+          <div class="information clearfix">
               <p class="slogan">Интернет-магазин<br> строительных материалов<br> и инструмента для ремонта</p>
               <div class="information_requisites">
-                  <div class="telephone">+7 (812) 555-05-55</div>
+                  <div class="information_telephone">+7 (812) 555-05-55</div>
                   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
               <div class="user_interface">
@@ -29,7 +31,7 @@
                   <a href="#" class="user_registration">Регистрация</a>
               </div>
           </div>
-          <nav class="main_navigation dark_blue">
+          <nav class="main_navigation">
               <ul>
                   <li>
                       <a href="#">Главная</a>
@@ -86,7 +88,7 @@
                         <a hef="#" class="red_block">Открыть каталог</a>
                     </div>
 
-                    <img src="img/photo_index_1.jpg" alt="картинка"/>
+                    <img src="img/photo_index_1.jpg" width="150" alt="картинка"/>
                 </div>
                 <div class="slide"></div>
                 <div class="slide"></div>
@@ -189,7 +191,7 @@
             <img src="img/fabricators_metabo.jpg" width="150" height="100" alt="Картинка компании Metabo">
         </a>
     </div>
-        <div class="services">
+        <div class="services clearfix">
             <div class="container">
                 <h2>Сервисы</h2>
                 <p>Хороший интернет магазин от плохого отличается ценами!</p>
@@ -217,7 +219,7 @@
                 </div>
             </div>
         </div>
-    <div class="container">
+    <div class="container clearfix">
         <div class="general_info">
             <div class="about_us">
                 <h2>Компания "Техномарт"</h2>
@@ -243,9 +245,9 @@
     </div>
 </main>
 <footer>
-    <div class="container">
+    <div class="container clearfix">
         <div class="upper_footer">
-            <div>
+            <div class="upper_footer_block">
                 <a href="#" class="logotype">Техномарт</a>
                 <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                     +7 (812) 555-05-55</p>
@@ -268,21 +270,21 @@
                 </li>
             </ul>
             <ul>
-                <li>
+                <li class="upper_footer_yel">
                     <a href="#" class="yellow">Материалы</a>
                 </li>
-                <li>
+                <li class="upper_footer_yel">
                     <a href="#" class="yellow">Техника</a>
                 </li>
-                <li>
+                <li class="upper_footer_yel">
                     <a href="#" class="yellow">Инструмент</a>
                 </li>
-                <li>
+                <li class="upper_footer_yel">
                     <a href="#" class="yellow">Спецпредложения</a>
                 </li>
             </ul>
         </div>
-        <div class="lower_footer">
+        <div class="lower_footer clearfix">
             <section class="footer_rights">
             <p>&copy;2010-2016 Компания "Техномарт"<br>
             Все права защищены</p>
