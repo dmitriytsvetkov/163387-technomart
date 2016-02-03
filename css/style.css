@@ -30,7 +30,6 @@ h2 {
 }
 .main_header {
     outline: 1px solid brown;
-    margin-bottom: 60px;
 }
 .upper_header {
     outline: 1px solid seagreen; /*не разобрался как сделать на всю ширину экрана блок*/
@@ -68,8 +67,17 @@ h2 {
     float: left;
 }
 .user_interface {
+    margin-left: 150px;
     float: left;
     width: 300px;
+    min-height: 45px;
+    outline: 1px solid darkmagenta;
+}
+.user_exit {
+    width: 60px;
+    min-height: 45px;
+    float: left;
+    outline: 1px solid darkorange;
 }
 .user_enter {
     margin-left: 18px;
@@ -83,16 +91,81 @@ h2 {
     min-height: 45px;
     float: left;
 }
+.user_name {
+    float: left;
+    outline: 1px solid yellow;
+    width: 240px;
+    min-height: 45px;
+}
+.user_orders {
+    margin-left: 150px;
+    float: left;
+    outline: 1px solid blue;
+}
+.user_cabinet {
+    float: left;
+    outline: 1px solid blue;
+}
 .main_navigation {
     outline: 1px solid black;
     min-height: 60px;
     margin-bottom: 60px;
 }
+.breadcrumbs {
+    float: left;
+    outline: 1px solid blueviolet;
+    width: 940px;
+}
+.breadcrumbs li {
+    min-height: 60px; /*Тоже какая то фигня с размерами*/
+    float: left;
+    margin-right: 20px;
+}
+.catalog_h1 {
+    clear: both;
+    min-height: 90px;
+    background-color: #32425c;
+}
 .main_navigation li {
     float: left;
     width: 120px; /* Не понимаю почему там отступы слева и справа у первого и последнего элемента, как разместить верно?*/
 }
-
+.sorting {
+    outline: 1px solid lightcoral;
+    float: left;
+    min-height: 40px;
+    width: 700px;
+    margin-left: 20px;
+}
+.sorting p {
+    float: left;
+}
+.sorting a {
+    float: left;
+}
+.catalog_form {
+    width: 220px;
+    min-height: 1050px;
+    float: left;
+    outline: 1px solid darkmagenta;
+}
+.catalog_slider {
+    float: left;
+    outline: 1px solid greenyellow;
+}
+.catalog_slider_min {
+    float: left; /*Не уверен нужно ли здесь флоатить*/
+}
+.catalog_slider_max {
+    float: left; /*Не уверен нужно ли здесь флоатить*/
+}
+.catalog_form_slider {
+    float: left;
+    outline: 1px solid blue;
+}
+.catalog_form_fabricators {
+    float: left;
+}
 .scroll {
     min-height: 125px;
     width: 300px;
@@ -100,7 +173,11 @@ h2 {
     float: left;
 }
 .scroll:nth-child(-n+2) {
+    margin-top: 60px;
     margin-right: 20px;
+}
+.scroll:nth-child(3) {
+    margin-top: 60px; /*Пока так, по другому не придумал*/
 }
 .scroll:nth-child(n+4) {
     margin-top: 20px;
@@ -113,7 +190,6 @@ h2 {
     float: left;
     margin-top: 20px;
     margin-bottom: 50px;
-
 }
 .popular {
     width: 940px;
@@ -122,19 +198,35 @@ h2 {
     float: left;
     margin-bottom: 20px;
 }
-.all_items {
+.all_items_index {
     outline: 1px solid black;
-
+    float: left;
 }
-.item {
+.all_items_index .item {
     width: 220px;
     min-height: 320px;
     float: left;
     outline: 1px solid black;
     margin-bottom: 20px;
 }
-.item:nth-child(n+2) {
+.all_items_index .item:nth-child(n+2) {
     margin-left: 20px;
+}
+.all_items_catalog {
+    width: 720px;
+    outline: 1px solid black;
+    float: left;
+}
+.all_items_catalog .item {
+    width: 220px;
+    min-height: 320px;
+    float: left;
+    outline: 1px solid black;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.all_items_catalog .item:nth-child(n+7) {
+    margin-bottom: 0px;
 }
 .fabricators {
     outline: 1px solid fuchsia;
@@ -156,6 +248,12 @@ h2 {
     float: left;
     margin-bottom: 80px;
 }
+.catalog_about {
+    background-color: lightcoral;
+    margin-top: 60px;
+    min-height: 260px;
+    margin-bottom: 0px !important;
+}
 .about_us {
     width: 630px;
     min-height: 380px;
@@ -167,8 +265,17 @@ h2 {
     min-height: 380px;
     float: right;
 }
+.paginator {
+    float: left;
+    outline: 1px solid yellow;
+    margin-left: 240px;
+    min-height: 40px;
+}
 main {
-    margin-bottom: 85px;
+    background-color: cornsilk;
+}
+footer {
+    background-color: cyan;
 }
 .upper_footer {
     outline: 1px solid darkmagenta;
