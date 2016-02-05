@@ -1,18 +1,18 @@
 body {
     font-size: 13px;
-    font-family: "CuprumRegular", "Arial", serif;
+    font-family: "CuprumRegular", "Arial", sans-serif;
     color: #000;
     line-height: 24px;
 }
 h1 {
     font-size: 36px;
-    font-family: "CuprumBold", "Arial", serif;
+    font-family: "CuprumBold", "Arial", sans-serif;
     color: #ffffff;
     line-height: 30px;
 }
 h2 {
     font-size: 30px;
-    font-family: "CuprumRegular", "Arial", serif;
+    font-family: "CuprumRegular", "Arial", sans-serif;
     color: #32425c;
     line-height: 30px;
 }
@@ -32,7 +32,7 @@ h2 {
     outline: 1px solid brown;
 }
 .upper_header {
-    outline: 1px solid seagreen; /*не разобрался как сделать на всю ширину экрана блок*/
+    outline: 1px solid seagreen;
     margin-bottom: 45px;
 }
 .upper_header_logo {
@@ -58,16 +58,20 @@ h2 {
 }
 .information {
     outline: 1px solid black;
+    min-height: 115px;
 }
-.slogan {
-    float: left; /* НЕ ЗАДАЕТСЯ РАЗМЕР + не по верху*/
+.information_slogan {
+    margin-top: 0px;
+    display: block;
+    outline: 1px solid red;
+    float: left;
 }
 .information_requisites {
-    width: 320px;
+    outline: 1px solid red;
+    width: 470px;
     float: left;
 }
 .user_interface {
-    margin-left: 150px;
     float: left;
     width: 300px;
     min-height: 45px;
@@ -98,7 +102,6 @@ h2 {
     min-height: 45px;
 }
 .user_orders {
-    margin-left: 150px;
     float: left;
     outline: 1px solid blue;
 }
@@ -107,6 +110,7 @@ h2 {
     outline: 1px solid blue;
 }
 .main_navigation {
+    margin: 0px;
     outline: 1px solid black;
     min-height: 60px;
     margin-bottom: 60px;
@@ -116,8 +120,12 @@ h2 {
     outline: 1px solid blueviolet;
     width: 940px;
 }
+.breadcrumbs ul {
+    padding: 0;
+    margin: 0;
+}
 .breadcrumbs li {
-    min-height: 60px; /*Тоже какая то фигня с размерами*/
+    min-height: 60px;
     float: left;
     margin-right: 20px;
 }
@@ -126,18 +134,24 @@ h2 {
     min-height: 90px;
     background-color: #32425c;
 }
+.catalog_content {
+    outline: 1px solid darkorange;
+}
 .main_navigation li {
+    outline: 1px solid red;
     float: left;
-    width: 120px; /* Не понимаю почему там отступы слева и справа у первого и последнего элемента, как разместить верно?*/
+}
+.main_navigation ul {
+    margin: 0;
+    padding: 0;
 }
 .sorting {
     outline: 1px solid lightcoral;
-    float: left;
     min-height: 40px;
-    width: 700px;
-    margin-left: 20px;
+    width: 720px;
 }
 .sorting p {
+    margin-left: 20px;
     float: left;
 }
 .sorting a {
@@ -145,9 +159,13 @@ h2 {
 }
 .catalog_form {
     width: 220px;
-    min-height: 1050px;
     float: left;
     outline: 1px solid darkmagenta;
+}
+.container_catalog {
+    width: 720px;
+    outline: 1px solid chartreuse;
+    float: left;
 }
 .catalog_slider {
     float: left;
@@ -160,73 +178,90 @@ h2 {
     float: left; /*Не уверен нужно ли здесь флоатить*/
 }
 .catalog_form_slider {
-    float: left;
     outline: 1px solid blue;
 }
 .catalog_form_fabricators {
-    float: left;
 }
-.scroll {
+.main_features_scroll {
     min-height: 125px;
     width: 300px;
     outline: 1px solid darkmagenta;
     float: left;
 }
-.scroll:nth-child(-n+2) {
-    margin-top: 60px;
+.materials {
     margin-right: 20px;
+    margin-top: 60px;
 }
-.scroll:nth-child(3) {
-    margin-top: 60px; /*Пока так, по другому не придумал*/
+.tech {
+    margin-top: 60px;
 }
-.scroll:nth-child(n+4) {
+.instrument {
+    margin-right: 20px;
+    margin-top: 60px;
+}
+.discount {
     margin-top: 20px;
-    margin-left: 20px;
 }
-.main_slider {
-    width: 620px;                     /* Не понял как разместить элементы внутри картинки. Как фон чтоли?*/
+.delivery {
+    margin-top: 20px;
+}
+.main_features_slider {
+    width: 620px;                    
     min-height: 270px;
     outline: 1px solid crimson;
     float: left;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-right: 20px;
+}
+.main_features {
+    margin-bottom: 55px;
 }
 .popular {
+    clear: both;
     width: 940px;
     min-height: 90px;
     outline: 1px solid darkmagenta;
-    float: left;
     margin-bottom: 20px;
 }
-.all_items_index {
-    outline: 1px solid black;
+.popular h2 {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
     float: left;
+}
+.popular .red_block {
+    outline: 1px solid red;
+    float: left;
+}
+.all_items_index {
+    margin-bottom: 20px;
+    clear: both;
+    outline: 1px solid black;
 }
 .all_items_index .item {
     width: 220px;
     min-height: 320px;
     float: left;
     outline: 1px solid black;
-    margin-bottom: 20px;
-}
-.all_items_index .item:nth-child(n+2) {
     margin-left: 20px;
+}
+.all_items_index .item:nth-child(1) {
+    margin-left: 0px;
 }
 .all_items_catalog {
     width: 720px;
     outline: 1px solid black;
-    float: left;
 }
 .all_items_catalog .item {
     width: 220px;
     min-height: 320px;
     float: left;
     outline: 1px solid black;
-    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 20px;
 }
-.all_items_catalog .item:nth-child(n+7) {
-    margin-bottom: 0px;
+.main_fabricators {
+    outline: 1px solid darkorange;
 }
 .fabricators {
     outline: 1px solid fuchsia;
@@ -243,16 +278,17 @@ h2 {
     margin-left: 0px;
 }
 .services {
-    margin-top: 85px;  /*Не получается сделать на всю ширину экрана*/
+    margin-top: 85px;
     outline: 1px solid fuchsia;
-    float: left;
     margin-bottom: 80px;
+}
+.conditions {
+    outline: 1px solid red;
 }
 .catalog_about {
     background-color: lightcoral;
     margin-top: 60px;
     min-height: 260px;
-    margin-bottom: 0px !important;
 }
 .about_us {
     width: 630px;
@@ -269,18 +305,19 @@ h2 {
     float: left;
     outline: 1px solid yellow;
     margin-left: 240px;
+    margin-top: 55px;
     min-height: 40px;
 }
 main {
     background-color: cornsilk;
 }
-footer {
-    background-color: cyan;
+.general_info {
+    outline: 1px solid red;
 }
 .upper_footer {
     outline: 1px solid darkmagenta;
     min-height: 195px;
-    width: 940px;
+    background-color: peachpuff;
 }
 .upper_footer_block {
     float: left;
@@ -294,18 +331,16 @@ footer {
     width: 220px;
     min-height: 70px;
 }
+.upper_footer ul {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    float: left;
+}
 .upper_footer li {
     float: left;
     min-height: 95px;
     outline: 1px solid black;
-    width: 110px;
-}
-.upper_footer_yel {
-    width: 135px !important;
-    min-height: 100px !important; /*По другому не додумался*/
-}
-.upper_footer_yel:last-child {
-    width: 145px !important;
 }
 .upper_footer_block p {
     clear: both;
