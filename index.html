@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
       <title>HTML Academy: Техномарт Главная</title>
   </head>
@@ -13,8 +15,8 @@
               <a href="#" class="logotype">Техномарт</a>
               </div>
           <form class="upper_header_form">
-              <input type="submit" class="search">
-              <input type="text" placeholder="Поиск:">
+              <input type="image" src="img/icon_search.png" alt="Поиск" class="upper_header_form_icon">
+              <input type="text" placeholder="Поиск:" class="upper_header_form_searching">
           </form>
           <a href="#" class="upper_header_bookmarks">Закладки: <span>0</span></a>
           <a href="#" class="upper_header_basket">Корзина: <span>0</span></a>
@@ -36,7 +38,7 @@
           <nav class="main_navigation">
               <ul class="clearfix">
                   <li>
-                      <a href="#">Главная</a>
+                      <a href="#" class="main_navigation_first">Главная</a>
                   </li>
                   <li>
                       <a href="#">Компания</a>
@@ -54,7 +56,7 @@
                       <a href="#">Доставка</a>
                   </li>
                 <li>
-                      <a href="#">Контакты</a>
+                      <a href="#" class="main_navigation_last">Контакты</a>
                 </li>
               </ul>
           </nav>
